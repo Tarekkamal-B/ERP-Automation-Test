@@ -1,13 +1,13 @@
 it('login to Erp', () => {
-    cy.visit('https://intmicrotec.neat-url.com:2006/bussiness-owners/');
+    cy.visit('****************************/');
     cy.get('#Email').clear();
     cy.get('#Email').type('*********');
     cy.get('#Password').clear();
     cy.get('#Password').type('*********');
     cy.get('.custom-btn > img').click();
-    cy.origin('https://testdomain.microtecdev.com:2050', () => {
+    cy.origin('*************************************', () => {
 
-        cy.visit('https://testdomain.microtecdev.com:2050/erp/');
+        cy.visit('************************************');
         cy.contains('.modal-card', 'Inventory').should('be.visible').click();
         cy.get('.flex.justify-content-center.arrowIconDiv.imgContDiv.ng-star-inserted').should('be.visible').click();
         cy.contains('.ng-star-inserted', 'Master Data').should('be.visible').click();
@@ -33,7 +33,7 @@ it('login to Erp', () => {
 
 it.only('Edit item definiton', {defaultCommandTimeOut: 6000} ,()=>{
     // navigate to erp and enter username and password and login
-    cy.visit('https://intmicrotec.neat-url.com:2006/bussiness-owners/');
+    cy.visit('*******************************');
     cy.get('#Email').clear();
     cy.get('#Email').type('**************');
     cy.get('#Password').clear();
@@ -41,9 +41,9 @@ it.only('Edit item definiton', {defaultCommandTimeOut: 6000} ,()=>{
     cy.get('.custom-btn > img').click();
   
     //  navigate to Erp testdomain 
-    cy.origin('https://testdomain.microtecdev.com:2050', () => {
+    cy.origin('https://********************', () => {
     // navigate to inventory
-        cy.visit('https://testdomain.microtecdev.com:2050/erp/');
+        cy.visit('https://************************');
         cy.contains('.modal-card', 'Inventory').should('be.visible').click();
     // navigate to menu side bar and click    
         cy.get('.flex.justify-content-center.arrowIconDiv.imgContDiv.ng-star-inserted').should('be.visible').click();
